@@ -8,7 +8,7 @@ import {
   DeleteStreamsRequest,
 } from "@hellomoon/api";
 
-const API_KEY = "yourApiKeyHere";
+const API_KEY = "732027ca-56f4-4243-828e-3c6f01a9edc7";
 const RPC_WSS = "wss://kiki-stream.hellomoon.io";
 const RPC_URL = `https://rpc.hellomoon.io/${API_KEY}`;
 
@@ -79,7 +79,6 @@ class InboundTransactionListener {
 class SubscriptionStreamManager {
   stream: BalanceChangeStream;
   restClient: RestClient;
-  //   client: typeof SubscriptionManagerClient;
   constructor(mintAddr: string) {
     this.stream = new BalanceChangeStream({
       target: {
